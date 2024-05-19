@@ -1,0 +1,17 @@
+{
+	"scripts": {
+		"generate-migration": "drizzle-kit generate:pg --out ./src/db/migrations --schema ./src/db/schema.ts",
+		"migrate": "ts-node src/db/migrate"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.28.6",
+		"pg": "^8.11.5"
+	},
+	"devDependencies": {
+		"@types/pg": "^8.11.6",
+		"dotenv": "^16.4.5",
+		"drizzle-kit": "^0.19.13",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5"
+	}
+}
